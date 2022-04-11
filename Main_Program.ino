@@ -212,7 +212,7 @@ int posi (char P) {
   else if (P == 5)  return Position5;
 }
 
-void Position (char Next_Posi) {  // *****  ใช้ค่าพารามิเตอร์ได้แค่ 1-4  ******
+void Position (char Next_Posi) {  // *****  ใช้ค่าพารามิเตอร์ได้แค่ 1-5  ******
   int Count_Dri = posi(Next_Posi) - Count;
   Count = posi(Next_Posi);
   Current_Position < Next_Posi ? Motor_Right(Count_Dri) : Motor_Left(-Count_Dri);
